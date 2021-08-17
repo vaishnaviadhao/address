@@ -1,0 +1,13 @@
+<p id="notice"><%= notice %></p>
+<div class="e">
+<h2 class="address_address_line1"><%= @address.address_line1 %></h2>
+<h2 class="address_address_line2"><%= @address.address_line2 %></h2>
+<h2 class="address_city"><%= @address.city %></h2>
+<h2 class="address_country"><%= @address.country %></h2>
+<h2 class="address_pincode"><%= @address.pincode %></h2>
+
+<div class="links">
+  <%= link_to 'Back', addresses_path %>
+  <%= link_to 'Edit', edit_address_path(@address) %>
+  <%= link_to 'Delete', address_path(@address), method: :delete, data: { confirm: "Are you sure?" }, class: :delete %>
+</div></div>

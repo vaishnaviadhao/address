@@ -1,0 +1,13 @@
+<div class="todo">
+<h1>TodoList</h1>
+<% if @todo_lists.empty? %>
+ <p>No lists found. Create one using button below</p>
+<% end %>
+<h2>
+<% @todo_lists.each do |todo_list| %>
+  <%= link_to todo_list.title, todo_list %> 
+ <%= todo_list.description %> 
+<% end %></h2>
+<h3>
+<%= link_to "New Todo List", new_todo_list_path %>
+</h3></div>

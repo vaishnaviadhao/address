@@ -1,0 +1,45 @@
+ <html>
+     <head>
+    <style>
+    table
+    {
+        width:50%;
+        margin-left:25%;
+    }
+    table, th, td 
+    {
+        border: 1px solid black;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    h2{
+        text-align: center;
+        color: rgb(9, 61, 68);
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        
+    }
+    th{
+        background-color: rgb(131, 22, 67);
+        color: white;
+    }
+    td{
+        text-align: center;
+    }
+</style>
+     </head>
+<body>
+    <h2><u>Student Information</u></h2>
+    <table>
+    <tr>
+       <th>Name</th>
+       <th>Email</th>
+    </tr>
+    <% @users.each do |user| %>
+         <tr>
+             <td style="color:rgb(0, 0, 0);"><%= user.name %></td>
+             <td style="color:blue;"><%= user.email %></td>
+         </tr>
+    <% end %>
+    </table>       
+   
+</body>
+</html>

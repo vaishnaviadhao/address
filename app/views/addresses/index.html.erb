@@ -1,0 +1,23 @@
+<div class="", style="text-align: center;"><h1><u>Customer Address</u></h1></div>
+
+<% if @addresses.empty? %>
+ <p>No lists found. Create one using button below</p>
+<% end %>
+<div class="head">
+<h2>Address_line1</h2>
+<h2>Address_line2</h2>
+<h2>City</h2>
+<h2>Country</h2>
+<h2>Pincode</h2>
+
+
+<% @addresses.each do |address| %>
+
+<ol><%= link_to address.address_line1, address %></ol>
+<ol><%= link_to address.address_line2, address %></ol>
+<ol><%= link_to address.city, address %></ol>
+<ol><%= link_to address.country, address %></ol>
+<ol><%= link_to address.pincode, address %></ol>
+
+<%end %>
+<%= link_to 'Add Address', new_address_path %></div>

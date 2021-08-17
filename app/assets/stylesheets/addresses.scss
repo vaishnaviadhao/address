@@ -1,0 +1,58 @@
+// Place all the styles related to the addresses controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.title{
+    text-align: center;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(79, 15, 151);
+    mix-blend-mode: color;
+    text-decoration: underline overline;
+}
+
+.abc{
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+ .field{   
+    border: 1% solid rgb(14, 13, 13);
+  outline: 1% solid rgb(10, 10, 10);
+  background-color: rgb(216, 216, 230);
+  width:50%;
+  margin-left:25% ;
+  margin-bottom: 50%;
+}
+.a{
+    text-align: center;
+    font-style: normal;
+    font-size: medium;
+}
+.head{
+    text-align: center;
+    border: 1% solid rgb(14, 13, 13);
+  outline: 1% solid rgb(10, 10, 10);
+  background-color: rgb(223, 234, 241);
+  width:50%;
+  margin-left:25% ;
+  margin-bottom: 50%;
+  
+}
+
+.e{
+  text-align: center;
+  border: 1% solid rgb(14, 13, 13);
+outline: 1% solid rgb(10, 10, 10);
+background-color: rgb(243, 232, 217);
+width:50%;
+margin-left:25% ;
+margin-bottom: 50%;
+}
+.edit{
+  text-align: center;
+  border: 1% solid rgb(14, 13, 13);
+outline: 1% solid rgb(10, 10, 10);
+background-color: rgb(209, 226, 194);
+width:50%;
+margin-left:25% ;
+margin-bottom: 50%;
+}
